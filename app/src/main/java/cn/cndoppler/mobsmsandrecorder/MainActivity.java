@@ -88,6 +88,13 @@ public class MainActivity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                Toast.makeText(MainActivity.this, "得到验证码", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }else if(result == Integer.parseInt(codeEt.getText().toString().trim())){
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
                                 Toast.makeText(MainActivity.this, "正确", Toast.LENGTH_SHORT).show();
                             }
                         });
