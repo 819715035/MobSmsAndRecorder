@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, "得到验证码", Toast.LENGTH_SHORT).show();
                             }
                         });
-                    }else if(result == Integer.parseInt(codeEt.getText().toString().trim())){
+                    }else if(event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE){
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Toast.makeText(MainActivity.this, "正确", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "验证成功", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
