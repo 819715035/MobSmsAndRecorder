@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Toast.makeText(MainActivity.this, "得到验证码", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "得到验证码了", Toast.LENGTH_SHORT).show();
                             }
                         });
                     }else if(event == SMSSDK.EVENT_SUBMIT_VERIFICATION_CODE){
